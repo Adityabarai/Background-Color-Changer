@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     justify-content: center;
@@ -18,7 +19,7 @@ h1 {
 h3 {
     text-align: center;
 }
-.continer {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,4 +55,23 @@ h3 {
 }
 #green {
     background-color: green;
+}
+@media (max-width:450px) {
+    html {
+        font-size: 100%;
+    }
+    body {
+        margin-top: 25px;
+    }
+    .banner {
+        height: 750px;
+        width: 250px;
+        background-color: #ffe0b5;
+        border-radius: 25px;
+        border: 2px solid black;
+    }
+    .container {
+        flex-direction: column;
+    }
+
 }
